@@ -4,7 +4,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 
-numbers = list(range(0, 1001))
+numbers = list(range(0, 1000))
 numbers_3_5 = []
 
 for i in numbers:
@@ -14,7 +14,7 @@ for i in numbers:
 print(sum(numbers_3_5))
 
 # Shorter solution:
-#numbers = list(range(0, 1001))
+#numbers = list(range(0, 1000))
 #sum = 0
 #
 #for i in numbers:
