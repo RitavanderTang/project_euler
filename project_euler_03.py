@@ -4,17 +4,21 @@
 
 # What is the largest prime factor of the number 600851475143 ?
 
-list_1 = list(range(3, 11))
+list_1 = list(range(3, 1000))
 prime_num = [2]
 for i in list_1:
   num = 2
-  while i > num:
-    uitkomst = i / num
-    if isinstance(uitkomst, int):
+  while i >= num:
+    if i == num:
+      prime_num.append(i)
       break
-    num += 1
-  else:
-    prime_num.append(i)
+
+    uitkomst = i / num
+    if uitkomst.is_integer():
+      break
+    elif not uitkomst.is_integer():
+      num += 1
+
 
 print(prime_num)
 
